@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 — 유흥 정보의 투명한 기록과 비대칭 해체</title>
+    <meta name="description" content="화려한 광고 뒤에 숨겨진 유흥 업계의 불투명한 요금 체계를 해체합니다. 주대, TC, 룸티 등 복잡한 시스템을 객관적인 장부 관점으로 분석하는 운영팀의 철학과 원칙을 소개합니다.">
+    <meta name="keywords" content="유흥 용어 정리, 셔츠룸, 룸싸롱, 텐프로, 주대 비교, TC 분석, 룸티 정보, 투명한 장부">
+    <link rel="canonical" href="https://press.pub-jongno-pro.xyz/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="소개 — 유흥 정보의 투명한 기록과 비대칭 해체">
+    <meta property="og:description" content="화려한 광고 뒤에 숨겨진 유흥 업계의 불투명한 요금 체계를 해체합니다. 객관적인 장부 관점의 분석 철학.">
+    <meta property="og:url" content="https://press.pub-jongno-pro.xyz/about.html">
+
+    <style>
+        /* CSS Reset & Variable Definitions */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-color: #fbfaf7;
+            --text-color: #111111;
+            --accent-color: #9e2a2b; /* Deep crimson for auditing/accent */
+            --line-color: #111111;
+            --grid-color: #e2dfd8;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container Rules */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand {
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-color);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Lines as Visual Elements (Ledger concept) */
+        .m-wrap-jyow-single {
+            border-top: 1px solid var(--line-color);
+            margin: 2.5rem 0;
+        }
+
+        .m-wrap-jyow-double {
+            border-top: 1px solid var(--line-color);
+            border-bottom: 1px solid var(--line-color);
+            height: 4px;
+            margin: 2.5rem 0;
+        }
+
+        /* Ledger Table / Grid Structure */
+        .ledger-grid {
+            border: 1px solid var(--line-color);
+            background-color: #fff;
+            margin: 2rem 0;
+        }
+
+        .ledger-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            border-bottom: 1px solid var(--grid-color);
+        }
+
+        .ledger-row:last-child {
+            border-bottom: none;
+        }
+
+        .ledger-label {
+            background-color: #f0ede6;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-right: 1px solid var(--line-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .ledger-value {
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Custom Box (Information Block) */
+        .n-box-5uaw-text {
+            background-color: #f0ede6;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .n-box-5uaw-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Decorative Stamp Element */
+        .t-img-cz3v {
+            border: 2px dashed var(--accent-color);
+            color: var(--accent-color);
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 2rem 0;
+            display: inline-block;
+        }
+
+        /* FAQ List */
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-weight: 800;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            padding-left: 1rem;
+            border-left: 2px solid var(--line-color);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--line-color);
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .ledger-row {
+                grid-template-columns: 1fr;
+            }
+            .ledger-label {
+                border-right: none;
+                border-bottom: 1px solid var(--line-color);
+                padding: 0.5rem 1rem;
+            }
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <a href="https://press.pub-jongno-pro.xyz/" class="brand">PRO LEDGER</a>
+                <ul class="nav-links">
+                    <li><a href="https://press.pub-jongno-pro.xyz/">홈</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/glossary.html">용어 정리</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/pricing.html">요금 비교</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/about.html" class="active">소개</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Header -->
+        <header>
+            <h1>우리는 화려한 포장을 걷어내고,<br>오직 냉정한 장부만을 기록합니다.</h1>
+            <p class="lead">유흥 업계의 마케팅 수식어와 불투명한 요금 체계 속에서, 소비자가 마주하는 것은 언제나 정보의 비대칭이었습니다. 우리는 그 장벽을 무너뜨리기 위해 존재합니다.</p>
+        </header>
+
+        <!-- Decorative Stamp -->
+        <div class="t-img-cz3v">
+            AUDIT REPORT // ZERO-AFFILIATION NEUTRALITY
+        </div>
+
+        <!-- Section 1: The Philosophy -->
+        <section>
+            <h2>우리의 존재 이유와 철학</h2>
+            <p>
+                대한민국의 유흥 시장은 수많은 은어와 복잡한 계산법으로 둘러싸여 있습니다. 셔츠룸, 텐프로, 쩜오, 하이퍼블릭 등 업종마다 다르게 적용되는 테이블 차지(TC), 주대, 그리고 룸티까지. 투명한 정찰제가 존재하지 않는 이 생태계에서 초심자는 물론이고 경험이 있는 이들조차 예기치 못한 '청구서 폭탄'을 맞이하곤 합니다.
+            </p>
+            <p>
+                우리는 특정 업소를 홍보하여 수수료를 챙기는 알선업자가 아닙니다. 업계 내부에서 묵인되어 온 불투명한 단가 책정 방식을 분석하고, 이를 객관적인 지표로 정리하여 제공하는 <strong>'정보 분석 플랫폼'</strong>입니다. 현혹적인 미사여구는 배제합니다. 오직 숫자가 말해주는 진실과 시스템의 본질만을 다룹니다.
+            </p>
+        </section>
+
+        <!-- Divider -->
+        <div class="m-wrap-jyow-double"></div>
+
+        <!-- Section 2: Audit Principles (Ledger Style Table) -->
+        <section>
+            <h2>3대 분석 원칙</h2>
+            <p>우리는 다음 세 가지 원칙 하에 수집된 정보를 검증하고 기록합니다.</p>
+            
+            <div class="ledger-grid">
+                <div class="ledger-row">
+                    <div class="ledger-label">01. 실청구액 기준</div>
+                    <div class="ledger-value">광고용 '미끼 주대'가 아닌, 실제 고객이 퇴실 시 지불하는 최종 영수증(TC, 세금, 룸티 포함)을 기준으로 분석합니다.</div>
+                </div>
+                <div class="ledger-row">
+                    <div class="ledger-label">02. 알선 배제</div>
+                    <div class="ledger-value">특정 업소나 영업진과의 제휴를 통한 추천 링크나 예약 유도를 절대 진행하지 않으며, 순수 정보 제공만을 목적으로 합니다.</div>
+                </div>
+                <div class="ledger-row">
+                    <div class="ledger-label">03. 시스템 해체</div>
+                    <div class="ledger-value">변칙적인 요금 인상의 수단이 되는 시간 쪼개기, 묶음 계산 등의 꼼수를 분석하여 소비자가 사전에 방어할 수 있도록 돕습니다.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Box Accent -->
+        <div class="n-box-5uaw-text">
+            <strong>독자들에게 전하는 엄중한 경고:</strong><br>
+            유흥 시장에서 "가장 저렴하면서 가장 최고의 서비스를 제공한다"는 말은 성립할 수 없는 모순입니다. 가격이 낮아지면 회전율을 높이기 위해 시스템(TC 단가 조정, 시간 단축)이 변질되며, 서비스의 질이 올라가면 그에 상응하는 보이지 않는 비용이 청구서에 반드시 가산됩니다. 가격의 구조를 명확히 아는 것만이 불필요한 지출을 막는 유일한 방법입니다.
+        </div>
+
+        <!-- Divider -->
+        <div class="m-wrap-jyow-single"></div>
+
+        <!-- Section 3: FAQ / Q&A -->
+        <section>
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. 이 블로그는 광고료를 받고 작성된 글인가요?</div>
+                <div class="faq-answer">
+                    <p>아닙니다. 본 블로그의 모든 분석 콘텐츠는 사설 제휴나 커미션을 일절 배제한 독립적인 정보입니다. 우리는 특정 업소의 매출 증대에는 관심이 없으며, 오직 독자가 올바른 예산을 수립하도록 돕는 데 집중합니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 기재된 요금 정보는 실시간으로 정확한가요?</div>
+                <div class="faq-answer">
+                    <p>유흥 업계의 특성상 시즌, 요일, 그리고 담당 영업진의 성향에 따라 미세한 변동이 발생할 수 있습니다. 따라서 본 블로그의 요금 정보는 표준적인 가이드라인이자 '기준 장부'로 활용하시고, 방문 전 구체적인 견적을 직접 대조하시는 것을 권장합니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 왜 이러한 정보를 무상으로 공개하나요?</div>
+                <div class="faq-answer">
+                    <p>정보가 투명해질 때 비로소 비정상적인 폭리와 기만적인 영업 행위가 설 자리를 잃기 때문입니다. 건전하고 객관적인 정보 소비 시장이 형성되는 것이 궁극적으로 소비자와 정직한 업계 종사자 모두에게 득이 된다고 믿습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© PRO LEDGER. All Rights Reserved. 본 블로그는 정보 제공만을 목적으로 하며, 어떠한 불법 유흥 알선 및 예약을 진행하지 않습니다.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

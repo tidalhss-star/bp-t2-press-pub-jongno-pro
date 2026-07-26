@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 용어 정리 트렌드 — 시스템별 주대 및 TC 요금 체계 객관적 비교</title>
+    <meta name="description" content="유흥 업계의 불투명한 요금 체계와 용어 변화를 실시간 추적합니다. 셔츠룸, 텐프로, 하이퍼블릭 등 최신 트렌드와 장부 분석을 통해 합리적인 소비 기준을 제시합니다.">
+    <meta name="keywords" content="유흥 용어 정리, 셔츠룸, 룸싸롱, 텐프로, 쩜오, 하이퍼블릭, 가라오케, 주대, TC, 룸티">
+    <link rel="canonical" href="https://press.pub-jongno-pro.xyz/blog-3.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 용어 정리 트렌드 — 시스템별 주대 및 TC 요금 체계 객관적 비교">
+    <meta property="og:description" content="복잡한 업계 시스템의 용어와 요금 구조를 해체합니다. 셔츠룸부터 텐프로까지 투명한 정보 제공.">
+    <meta property="og:url" content="https://press.pub-jongno-pro.xyz/blog-3.html">
+
+    <style>
+        /* CSS Reset & Variable Definitions */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --bg-color: #0d0d0d;
+            --surface-color: #161616;
+            --surface-accent: #222222;
+            --primary-color: #e50914; /* Bold Red for Edgy Voice */
+            --text-color: #f5f5f7;
+            --text-muted: #86868b;
+            --border-thin: #2c2c2e;
+            --border-thick: #48484a;
+            --font-mono: 'Courier New', Courier, monospace;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container Rules */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Header */
+        header {
+            border-bottom: 1px solid var(--border-thin);
+            background-color: rgba(13, 13, 13, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-color);
+        }
+
+        /* Hero Section - Bold, Edgy Voice */
+        .hero-section {
+            padding: 80px 0 60px 0;
+            border-bottom: 1px solid var(--border-thin);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 4px 8px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.04em;
+        }
+
+        .hero-title span {
+            color: var(--primary-color);
+        }
+
+        .hero-desc {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--text-muted);
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        /* Ledger Concept Lines */
+        .m-wrap-jyow-single {
+            border-bottom: 1px solid var(--border-thin);
+            margin: 20px 0;
+        }
+
+        .m-wrap-jyow-double {
+            border-bottom: 4px double var(--border-thick);
+            margin: 20px 0;
+        }
+
+        /* The Ledger Grid (Comparing System Trends) */
+        .ledger-section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
+
+        .ledger-table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-thin);
+        }
+
+        .ledger-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+            min-width: 800px;
+        }
+
+        .ledger-table th, .ledger-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-thin);
+        }
+
+        .ledger-table th {
+            background-color: var(--surface-color);
+            color: var(--text-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        .ledger-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            background-color: var(--surface-accent);
+            color: var(--text-muted);
+        }
+
+        .badge.danger {
+            background-color: rgba(229, 9, 20, 0.1);
+            color: var(--primary-color);
+        }
+
+        /* News & Insights Grid */
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .insight-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-thin);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.3s ease;
+        }
+
+        .insight-card:hover {
+            border-color: var(--primary-color);
+        }
+
+        .insight-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .insight-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .insight-excerpt {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .insight-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-transform: uppercase;
+        }
+
+        .insight-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Text Box Block (n-box-5uaw-text) */
+        .n-box-5uaw-text {
+            background-color: var(--surface-accent);
+            border-left: 4px solid var(--primary-color);
+            padding: 24px;
+            margin: 40px 0;
+        }
+
+        .n-box-5uaw-text p {
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Image/Visual Placeholder (t-img-cz3v) */
+        .t-img-cz3v {
+            background: linear-gradient(135deg, #1f1f1f 0%, #0d0d0d 100%);
+            border: 1px solid var(--border-thin);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .t-img-cz3v::before {
+            content: "[ LEDGER SYSTEM VISUALIZATION ]";
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 0.2em;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-thin);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-thin);
+            padding: 24px 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .faq-question span {
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            padding-left: 24px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050505;
+            border-top: 1px solid var(--border-thin);
+            padding: 60px 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--text-color);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-thin);
+            padding-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                display: none; /* simple responsive handling for 768px pattern */
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://press.pub-jongno-pro.xyz/" class="logo">
+                LEDGER<span>PRO</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="https://press.pub-jongno-pro.xyz/">홈</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/trend.html" class="active">트렌드 분석</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/glossary.html">용어 사전</a></li>
+                    <li><a href="https://press.pub-jongno-pro.xyz/compare.html">시스템 비교</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <span class="hero-tag">Trend Report 2024</span>
+            <h1 class="hero-title">유흥 업계의 정보 비대칭 해체,<br><span>투명한 장부</span>에서 시작됩니다</h1>
+            <p class="hero-desc">
+                정보의 불균형 속에서 소비자가 겪는 부당한 비용 청구는 이제 그만해야 합니다. 셔츠룸부터 텐프로까지, 복잡하게 뒤얽힌 유흥 용어와 주대, TC, 룸티의 실상을 객관적인 트렌드 분석을 통해 가감 없이 파헤칩니다.
+            </p>
+            <div class="m-wrap-jyow-double"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid / Ledger -->
+    <main class="ledger-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>실시간 유흥 업종별 요금 시스템 트렌드</h2>
+                <p>구두 계약과 변칙적 추가 요금이 난무하던 과거를 지나, 현대 유흥 시장은 점차 투명한 장부식 정찰제로 진화하고 있습니다.</p>
+            </div>
+
+            <!-- Ledger Table -->
+            <div class="ledger-table-container">
+                <table class="ledger-table">
+                    <thead>
+                        <tr>
+                            <th>업종 구분</th>
+                            <th>핵심 용어</th>
+                            <th>과거 요금 구조 (비대칭형)</th>
+                            <th>최신 트렌드 (정찰화)</th>
+                            <th>투명도 등급</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>셔츠룸 (Shirts Room)</strong></td>
+                            <td>TC, 입실료, 주대</td>
+                            <td>유선 상 저렴한 주대 제시 후 현장 추가금 발생</td>
+                            <td>시간당 정찰제 TC 명시, 주대 세트화 구성</td>
+                            <td><span class="badge danger">높음 (정찰제 정착 중)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>텐프로 / 쩜오 (Tenpro / 0.5)</strong></td>
+                            <td>묶음 테이블, 룸티, 와리</td>
+                            <td>구두 합의에 의한 고무줄 주대 및 팁 강요</td>
+                            <td>시간별 정밀 룸티 적용 및 사전 고지 시스템 도입</td>
+                            <td><span class="badge">낮음 (여전한 비공개주의)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>하이퍼블릭 (High Public)</strong></td>
+                            <td>기본 주대, 연장 TC</td>
+                            <td>연장 시 불규칙한 추가 요금 및 음료 비용 과다 청구</td>
+                            <td>태블릿 기반 실시간 오더 및 중간 정산 내역 제공</td>
+                            <td><span class="badge danger">매우 높음</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>가라오케 (Karaoke)</strong></td>
+                            <td>룸티, 세트 주대, 웨이터 팁</td>
+                            <td>웨이터 재량에 따른 봉사료 청구 및 룸티 누락 분쟁</td>
+                            <td>입구 정찰판 설치 및 사전 결제 시스템 확산</td>
+                            <td><span class="badge">보통</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="m-wrap-jyow-single"></div>
+
+            <!-- Bold Edgy Editorial -->
+            <div class="n-box-5uaw-text">
+                <p>
+                    "업계 관계자들은 여전히 정보의 불투명성 뒤에 숨어 마진을 극대화하려고 합니다. '눈탱이'라 불리는 바가지 요금은 바로 이러한 구조적 왜곡에서 탄생합니다. 소비자가 직접 용어를 이해하고 요금 장부의 구조를 꿰뚫고 있을 때, 비로소 불필요한 지출을 완벽히 차단할 수 있습니다."
+                </p>
+            </div>
+
+            <!-- Graphic Visual Element -->
+            <div class="t-img-cz3v"></div>
+
+            <div class="m-wrap-jyow-single"></div>
+
+            <!-- News & Insights Grid -->
+            <div class="section-header" style="margin-top: 60px;">
+                <h2>주목해야 할 최신 업계 뉴스 & 분석</h2>
+                <p>변화하는 유흥 트렌드와 규제 속에서 소비자가 반드시 알아야 할 구조적 시그널입니다.</p>
+            </div>
+
+            <div class="insights-grid">
+                <!-- Card 1 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="insight-meta">
+                            <span>INSIGHT 01</span>
+                            <span>2024-10-24</span>
+                        </div>
+                        <h3 class="insight-title">TC(Table Charge)의 세분화와 연장 정산의 투명성</h3>
+                        <p class="insight-excerpt">
+                            과거에는 묶음 형태의 애매한 시간당 계산이 주를 이루었으나, 최근에는 15분 단위 혹은 분할 TC 정산 시스템을 도입하여 소비자가 이용한 만큼만 지불하도록 요구하는 흐름이 뚜렷해지고 있습니다.
+                        </p>
+                    </div>
+                    <a href="#" class="insight-link">분석 전문 보기 →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="insight-meta">
+                            <span>TREND 02</span>
+                            <span>2024-10-22</span>
+                        </div>
+                        <h3 class="insight-title">셔츠룸과 하이퍼블릭의 경계 붕괴와 가격 평준화</h3>
+                        <p class="insight-excerpt">
+                            시스템적 차별성이 모호해지면서 두 업종 간의 주대 경쟁이 심화되고 있습니다. 이로 인해 소비자는 고정된 패키지 가격을 사전에 비교 분석하는 것이 유리해졌습니다.
+                        </p>
+                    </div>
+                    <a href="#" class="insight-link">분석 전문 보기 →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="insight-meta">
+                            <span>REPORT 03</span>
+                            <span>2024-10-19</span>
+                        </div>
+                        <h3 class="insight-title">룸티(Room Tee) 선불제 도입이 소비자에게 미치는 영향</h3>
+                        <p class="insight-excerpt">
+                            일부 대형 가라오케와 하이퍼블릭 매장을 중심으로 룸 대여료인 '룸티'를 선불제 혹은 완전 고정형으로 분리 고지하여 후불 추가 요금 시비를 사전 차단하는 경향이 강화되고 있습니다.
+                        </p>
+                    </div>
+                    <a href="#" class="insight-link">분석 전문 보기 →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>자주 묻는 질문 (FAQ)</h2>
+                <p>요금 체계와 용어에 대해 가장 빈번하게 오가는 질문들을 명확하게 정리해 드립니다.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> 주대와 TC, 룸티의 명확한 차이점은 무엇인가요?</div>
+                <div class="faq-answer">
+                    주대는 제공되는 술과 안주 세트에 대한 비용이며, TC(Table Charge)는 접객원의 시간당 봉사료를 의미합니다. 룸티(Room Tee)는 공간 대여료 및 음향 시설 이용료로 별도 책정되는 것이 일반적입니다. 이 세 가지가 명확히 분리 고지되는 업소가 투명한 곳입니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> 예약 시 구두로 안내받은 가격과 현장 결제 금액이 다를 때는 어떻게 대응해야 하나요?</div>
+                <div class="faq-answer">
+                    반드시 입장 전에 '웨이터 팁', '세금(VAT)', '봉사료'가 포함된 최종 합계 금액을 텍스트(문자 등)로 남겨두어야 합니다. 장부식 정찰제를 지향하는 업소일수록 이러한 사전 확인에 흔쾌히 응합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> 텐프로나 쩜오의 '묶음' 시스템이란 무엇입니까?</div>
+                <div class="faq-answer">
+                    시간당 TC를 개별 지불하는 대중적 업소와 달리, 하이엔드 업종에서는 일정 시간 혹은 테이블 단위로 기본 주대와 TC가 묶여서 일괄 청구되는 프리미엄 요금 방식입니다. 사전에 묶음 단위를 확인하지 않으면 예상을 초과하는 비용이 발생할 수 있습니다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LEDGER PRO</h4>
+                    <p>복잡한 유흥 업계의 시스템과 요금 체계를 객관적 데이터와 장부 형태로 해체하여 투명한 정보를 제공합니다.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>주요 카테고리</h4>
+                    <ul>
+                        <li><a href="https://press.pub-jongno-pro.xyz/">홈으로 돌아가기</a></li>
+                        <li><a href="https://press.pub-jongno-pro.xyz/trend.html">최신 트렌드 리포트</a></li>
+                        <li><a href="https://press.pub-jongno-pro.xyz/glossary.html">유흥 용어 백과사전</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>법적 한계 고지</h4>
+                    <p>본 사이트에서 제공하는 정보는 정보 제공 및 용어 분석을 목적으로 하며, 특정 업소 추천, 불법 행위 조장, 또는 상업적 거래를 알선하지 않습니다.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LEDGER PRO. All Rights Reserved.</p>
+                <p>Designed for Transparency and Consumer Rights.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

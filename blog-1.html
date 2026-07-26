@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 용어 정리 — 시스템별 주대 및 TC 요금 체계 객관적 비교</title>
+    <meta name="description" content="셔츠룸, 룸싸롱, 텐프로 등 복잡한 업계 시스템의 유흥 용어 정리 정보를 제공합니다. 주대, TC, 룸티 등 요금 체계를 투명한 장부 형태로 비교 분석하여 합리적인 판단을 돕습니다.">
+    <meta name="keywords" content="유흥 용어 정리, 셔츠룸, 룸싸롱, 텐프로, 쩜오, 하이퍼블릭, 가라오케, 주대, TC, 룸티">
+    <link rel="canonical" href="https://press.pub-jongno-pro.xyz/blog-1.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 용어 정리 — 시스템별 주대 및 TC 요금 체계 객관적 비교">
+    <meta property="og:description" content="복잡한 업계 시스템의 용어와 요금 구조를 해체합니다. 셔츠룸부터 텐프로까지 투명한 정보 제공.">
+    <meta property="og:url" content="https://press.pub-jongno-pro.xyz/blog-1.html">
+
+    <style>
+        /* CSS Reset & Variable Definitions */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-color: #0d0e12;
+            --surface-color: #14161d;
+            --surface-accent: #1d212c;
+            --accent-color: #ff3e3e; /* Ledger Red */
+            --accent-muted: #c12727;
+            --text-primary: #f1f2f6;
+            --text-secondary: #a4b0be;
+            --text-muted: #57606f;
+            --border-color: #2f3542;
+            --grid-line: rgba(255, 62, 62, 0.15);
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--surface-color);
+            border-bottom: 2px solid var(--accent-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .nav-logo {
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Container Rules */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Ledger Concept Lines */
+        .m-wrap-jyow-single {
+            border-bottom: 1px solid var(--border-color);
+            margin: 25px 0;
+        }
+
+        .m-wrap-jyow-double {
+            border-bottom: 4px double var(--accent-color);
+            margin: 35px 0;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--accent-color);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Ledger Box / Highlight Box */
+        .n-box-5uaw-text {
+            background-color: var(--surface-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 25px 0;
+            font-family: inherit;
+        }
+
+        .n-box-5uaw-text p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Custom Component: Styled Block for visual break */
+        .t-img-cz3v {
+            background: linear-gradient(135deg, var(--surface-color) 25%, var(--surface-accent) 100%);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid var(--accent-color);
+            padding: 30px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+
+        /* Ledger Table Design */
+        .ledger-table-wrapper {
+            overflow-x: auto;
+            margin: 30px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .ledger-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .ledger-table th {
+            background-color: var(--surface-accent);
+            color: var(--text-primary);
+            font-weight: 700;
+            padding: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        .ledger-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .ledger-table tr:hover {
+            background-color: rgba(255, 62, 62, 0.02);
+        }
+
+        .ledger-table td strong {
+            color: var(--text-primary);
+        }
+
+        /* Grid System for Cards */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        /* Card Elements */
+        .info-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            position: relative;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .info-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .info-card::before {
+            content: 'DEBIT';
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        .info-card.credit::before {
+            content: 'CREDIT';
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--surface-color);
+            padding: 35px;
+            border: 1px solid var(--border-color);
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .faq-question span {
+            color: var(--accent-color);
+            font-family: var(--font-mono);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            padding-left: 25px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="https://press.pub-jongno-pro.xyz/" class="nav-logo">
+                <span>LEDGER</span> ENTERTAINMENT
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://press.pub-jongno-pro.xyz/">홈</a></li>
+                <li><a href="#guide">용어 가이드</a></li>
+                <li><a href="#system">시스템 분석</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header>
+            <h1>유흥 용어 정리:<br>시스템별 주대 및 TC 요금 체계의 실상</h1>
+            <p>복잡하게 얽혀 있는 유흥 업계의 시스템과 은어를 투명한 장부의 관점으로 해체합니다. 각 업종별 구조적 차이와 정산 방식을 명확히 인지하는 것만이 왜곡된 정보 속에서 합리적인 판단을 내릴 수 있는 유일한 방법입니다.</p>
+        </header>
+
+        <div class="m-wrap-jyow-double"></div>
+
+        <!-- Section 1: Intro / Deep Dive Concept -->
+        <section id="guide">
+            <h2>정보의 비대칭을 해체하다</h2>
+            <p>유흥 소비 시장에서 소비자가 직면하는 가장 큰 장벽은 '불투명성'입니다. 업종마다 다르게 적용되는 시간 계산법, 모호하게 책정되는 주대, 그리고 계산서에 기습적으로 추가되는 각종 부대비용은 시장의 신뢰를 저해하는 주된 요인입니다. 본 가이드는 주관적인 감정이나 과장 없이, 오직 시스템의 객관적 구조만을 분석하여 기록합니다.</p>
+            
+            <div class="n-box-5uaw-text">
+                <p>💡 장부식 분석의 핵심: 모든 비용은 '주대(기본 술값)', 'TC(시간당 봉사료)', '룸티(공간 대여료)'의 세 가지 축으로 구성되며, 업종별 비율과 정산 방식에 따라 최종 청구 금액이 결정됩니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Terms Ledger Table -->
+        <section id="system" style="margin-top: 40px;">
+            <h2>핵심 용어 장부 (Ledger Table)</h2>
+            <p>업계에서 범용적으로 사용되는 핵심 용어들의 정의와 실제 정산 시 작용하는 메커니즘을 정리한 기준표입니다.</p>
+
+            <div class="ledger-table-wrapper">
+                <table class="ledger-table">
+                    <thead>
+                        <tr>
+                            <th>용어</th>
+                            <th>구조적 정의</th>
+                            <th>정산 반영 방식</th>
+                            <th>주의점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>주대 (酒代)</strong></td>
+                            <td>세트 메뉴(기본 주류 + 안주 + 음료) 가격</td>
+                            <td>입장 시 고정 비용으로 선반영</td>
+                            <td>추가 주문 시 할인율 적용 여부 확인 필요</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TC (Table Charge)</strong></td>
+                            <td>접객원의 시간당 봉사료</td>
+                            <td>시간 단위(시간제 또는 타임제) 정산</td>
+                            <td>묶음 시간(예: 60분/90분) 단위의 올림 계산 방식 유의</td>
+                        </tr>
+                        <tr>
+                            <td><strong>룸티 (Room Fee)</strong></td>
+                            <td>룸 공간 자체의 이용료 및 기본 세팅비</td>
+                            <td>고정 정액제 혹은 시간당 누적제</td>
+                            <td>대형 업소 및 가라오케 계열에서 주로 별도 청구</td>
+                        </tr>
+                        <tr>
+                            <td><strong>묶음 (묶음 TC)</strong></td>
+                            <td>정해진 시간 동안 고정된 비용을 지불하는 방식</td>
+                            <td>장시간 이용 시 일괄 정산</td>
+                            <td>중도 퇴실 시 일할 계산 여부가 업소마다 상이</td>
+                        </tr>
+                        <tr>
+                            <td><strong>와리 (R-Fee)</strong></td>
+                            <td>담당 영업진(마담, 부장)에게 귀속되는 수수료</td>
+                            <td>전체 주대 및 요금에 포함되어 청구됨</td>
+                            <td>비정상적인 유통 경로 이용 시 과다 책정 우려</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="m-wrap-jyow-single"></div>
+
+        <!-- Section 3: Deep Dive into Systems -->
+        <section>
+            <h2>시스템별 요금 구조 비교 분석</h2>
+            <p>다양한 업종들이 어떠한 방식으로 요금 체계를 구축하고 작동시키는지 그 실상을 해부합니다.</p>
+
+            <div class="grid-layout">
+                <!-- Card 1 -->
+                <div class="info-card">
+                    <h3>퍼블릭 / 하이퍼블릭 시스템</h3>
+                    <p>대중적인 접근성을 지향하는 시스템으로, 상대적으로 낮은 진입 장벽의 주대를 형성합니다. 정산의 투명성이 비교적 높은 편이나, 시간 단위가 세분화되어 있어 단시간 이용 시 체감 비용이 낮고 장시간 이용 시 TC 누적이 빠르게 진행되는 특성을 보입니다.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="info-card credit">
+                    <h3>셔츠룸 시스템</h3>
+                    <p>정형화된 콘셉트와 시간제 시스템을 기반으로 운영됩니다. 정해진 시간(보통 60분 내외) 동안의 회전율을 극대화하는 구조로 설계되어 있어, 주대와 TC가 명확하게 규격화되어 있는 경우가 많습니다. 예측 가능성이 높은 반면 시간 연장 시 정산 단위를 엄격히 준수해야 합니다.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="info-card">
+                    <h3>쩜오 / 텐프로 시스템</h3>
+                    <p>높은 수준의 주대와 로테이션(여러 테이블을 동시에 순회하는 방식) 시스템을 채택하고 있습니다. 1인당 지불해야 하는 기본 비용의 임계값이 높으며, 단순 시간제 TC가 아닌 '묶음' 혹은 '방 개수' 단위의 독특한 과금 방식이 적용되는 경우가 많아 정산 복잡도가 가장 높습니다.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="info-card credit">
+                    <h3>가라오케 / 밴드 시스템</h3>
+                    <p>단체 모임이나 회식 위주의 공간 제공형 시스템입니다. 주대 자체의 볼륨은 크지만 인원수 대비 n분의 1 정산 시 합리적인 단가가 도출될 수 있습니다. 다만, 외부 접객원 동반 시 발생하는 TC와 룸티, 음향 기기 사용료 등이 복합적으로 작용하므로 사전 확인이 필수적입니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Styled Info Block -->
+        <section class="t-img-cz3v">
+            <h3>장부 작성 시 반드시 확인해야 할 3대 검증 원칙</h3>
+            <p style="margin-bottom: 15px;">영업진과의 구두 합의에만 의존하는 정산은 분쟁의 씨앗이 됩니다. 아래의 기준에 맞춰 사전에 항목별 단가를 명확히 확정하십시오.</p>
+            <ul style="list-style-position: inside; color: var(--text-secondary); line-height: 1.8;">
+                <li><strong>시간 계산 방식의 기준:</strong> 입실 시점 기준인가, 접객원 착석 시점 기준인가?</li>
+                <li><strong>추가 비용의 한계선:</strong> 기본 세트에 포함된 음료 외의 추가 주문 단가는 얼마인가?</li>
+                <li><strong>세금 및 봉사료 유무:</strong> 제시된 금액이 부가세(VAT)와 카드 수수료가 포함된 최종가인가?</li>
+            </ul>
+        </section>
+
+        <div class="m-wrap-jyow-single"></div>
+
+        <!-- Section 5: FAQ -->
+        <section id="faq" class="faq-section">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <p>소비자들이 가장 혼란스러워하는 정산 및 용어 관련 의문점들에 대해 가감 없이 답변합니다.</p>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q1.</span> 룸티와 TC의 구체적인 차이는 무엇인가요?
+                </div>
+                <div class="faq-answer">
+                    <p>룸티는 공간을 점유하고 사용하는 시간에 대한 '부동산적 대가' 및 기본 세팅비에 가깝고, TC는 인적 서비스 제공에 따른 '노동의 대가'입니다. 일부 업소에서는 룸티를 면제하는 대신 주대에 이를 포함시키기도 하므로, 청구서에서 두 항목이 분리되어 있는지 통합되어 있는지 확인하는 것이 중요합니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q2.</span> 시간 연장(연장 TC) 시 요금은 어떻게 누적되나요?
+                </div>
+                <div class="faq-answer">
+                    <p>일반적으로 첫 타임 이후 연장 시에는 동일한 단가의 TC가 적용되나, 업소의 정산 기준(예: 10분 초과 시 30분 요금 부과 등)에 따라 올림 계산될 수 있습니다. 연장 의사를 밝히기 전에 잔여 시간과 과금 단위를 명확히 인지해야 과다 청구를 방지할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q3.</span> 정산 시 카드 결제와 현금 결제의 차이가 큰 이유는 무엇인가요?
+                </div>
+                <div class="faq-answer">
+                    <p>업계 관행상 세금 처리 및 가맹점 수수료 등의 이유로 결제 수단에 따른 차액이 발생할 수 있습니다. 이는 투명한 장부 작성을 방해하는 주요 요소이므로, 방문 전 최종 지불 방식에 따른 정확한 총액을 조율하는 것이 권장됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">LEDGER ENTERTAINMENT GUIDE</div>
+            <div>© 2024 정보 제공 블로그. All Rights Reserved. 본 사이트는 업계 시스템 이해를 돕기 위한 객관적인 정보만을 제공합니다.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
