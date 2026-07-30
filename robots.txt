@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://press.pub-jongno-pro.xyz/sitemap.xml
+Sitemap: https://press.pub-jongno-pro.xyz/sitemap-pages.xml
