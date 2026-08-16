@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-press-pub-jongno-pro</title>
+  <meta name="description" content="t2-press-pub-jongno-pro에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://press.pub-jongno-pro.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+        /* CSS Reset & Variable Definitions */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-color: #fbfaf7;
+            --text-color: #111111;
+            --accent-color: #9e2a2b; /* Deep crimson for auditing/accent */
+            --line-color: #111111;
+            --grid-color: #e2dfd8;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container Rules */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand {
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-color);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Lines as Visual Elements (Ledger concept) */
+        .m-wrap-jyow-single {
+            border-top: 1px solid var(--line-color);
+            margin: 2.5rem 0;
+        }
+
+        .m-wrap-jyow-double {
+            border-top: 1px solid var(--line-color);
+            border-bottom: 1px solid var(--line-color);
+            height: 4px;
+            margin: 2.5rem 0;
+        }
+
+        /* Ledger Table / Grid Structure */
+        .ledger-grid {
+            border: 1px solid var(--line-color);
+            background-color: #fff;
+            margin: 2rem 0;
+        }
+
+        .ledger-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            border-bottom: 1px solid var(--grid-color);
+        }
+
+        .ledger-row:last-child {
+            border-bottom: none;
+        }
+
+        .ledger-label {
+            background-color: #f0ede6;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-right: 1px solid var(--line-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .ledger-value {
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Custom Box (Information Block) */
+        .n-box-5uaw-text {
+            background-color: #f0ede6;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .n-box-5uaw-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Decorative Stamp Element */
+        .t-img-cz3v {
+            border: 2px dashed var(--accent-color);
+            color: var(--accent-color);
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 2rem 0;
+            display: inline-block;
+        }
+
+        /* FAQ List */
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-weight: 800;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            padding-left: 1rem;
+            border-left: 2px solid var(--line-color);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--line-color);
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .ledger-row {
+                grid-template-columns: 1fr;
+            }
+            .ledger-label {
+                border-right: none;
+                border-bottom: 1px solid var(--line-color);
+                padding: 0.5rem 1rem;
+            }
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+  <meta property="og:title" content="글 목록 · t2-press-pub-jongno-pro">
+  <meta property="og:description" content="t2-press-pub-jongno-pro에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://press.pub-jongno-pro.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+            <h1>우리는 화려한 포장을 걷어내고,<br>오직 냉정한 장부만을 기록합니다.</h1>
+            <p class="lead">유흥 업계의 마케팅 수식어와 불투명한 요금 체계 속에서, 소비자가 마주하는 것은 언제나 정보의 비대칭이었습니다. 우리는 그 장벽을 무너뜨리기 위해 존재합니다.</p>
+        </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 14개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-14bz5un.html">1972년, 그들이 진짜 지우려 했던 건 파일 세 개와 검색 알고리즘 하나였다</a>
+        <p class="post-item__summary">보통 사람들은 1972년 의회 청문회가 MK울트라의 전모를 밝혀낸 역사적 순간이라고 믿는다. 순진한 생각이다. 내가 데이터 과학자로서 구글 트렌드와 기밀해제 문서의 타임라인을 3년간 추적해보니, 그</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-1fz2vor.html">3천 벌어도 적자라니, 룸살롱 장부 밑바닥 털어본 썰</a>
+        <p class="post-item__summary">세벽 세 시, 마감 정산서에 찍힌 매출 3,000만 원은 분명 화려했습니다. 하지만 금고를 열어보니 남은 건 텅 빈 깡통뿐이었죠. 6개월간 매일 밤 '오늘도 매출 찍었으니 됐다'며 스스로를 속였던 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-005-frjh0s.html">유흥 용어 정리 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">안녕하세요! 무엇을 도와드릴까요? 원하시는 작업이나 질문을 편하게 말씀해 주세요!</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-180dg2i.html">CIA가 폐기했다는 그 서류, 사실은 구글 트렌드에 흔적이 남는다</a>
+        <p class="post-item__summary">&quot;야, 너 아직도 MK울트라가 그냥 LSD 먹이는 실험인 줄 아냐?&quot;</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-30439u.html">홍대 바닥에서 권리금 2억 챙긴 놈과 빚만 남긴 놈의 결정적 차이</a>
+        <p class="post-item__summary">2023년 홍대 서교동 35X번지, 권리금 2억 5천만 원이 오간 계약서를 직접 뜯어봤습니다. 5년간 운영하던 가게가 폐업하는 날, 건물주와 임차인 사이의 그 서늘한 기류를 옆에서 지켜보는 건 꽤 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-1da3xjf.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울 지역을 기반으로 다양한 생활 정보와 문화 정보를 탐색할 때 전문적인 정보 블로그를 활용하면 빠르고 정확하게 원하는 내용을 찾을 수 있습니다. 특히 낯선 분야나 신조어가 많이 쓰이는 유흥 용어 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-001-p0ioow.html">유흥 용어 정리 vs 유흥 용어 정리 비교</a>
+        <p class="post-item__summary">안녕하세요! 어떤 도움이 필요하신가요? 진행하고자 하시는 작업이나 요청 사항을 편하게 말씀해 주세요.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-005-171hfi.html">권리금 2억의 함정, 룸 서비스업 마진율의 불편한 진실</a>
+        <p class="post-item__summary">권리금 2억을 챙겨 나간 사장님은 '가게가 잘 돼서' 나간 게 아닙니다. 장사가 안되니까 엑시트(Exit) 전략으로 권리금을 챙긴 거죠. 다들 목 좋은 곳이라 생각하지만, 실상은 매출 대비 고정비가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1c4gocr.html">권리금 2억 받고 튄 놈이 말해주는 홍대 폐업의 진짜 속내, 임대차 계약서에 답 있다</a>
+        <p class="post-item__summary">홍대입구역 7번 출구에서 걸어서 3분, 2022년 11월까지 ‘감성 와인바’ 간판을 달고 있던 그 건물 2층. 지금은 텅 빈 공간에 새 임차인이 권리금 2억을 인수하며 들어왔다. 근데 웃긴 건, 그</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1x64gmz.html">매출 3천 찍고도 야반도주한 놈이 알려주는 룸살롱 원가 함정</a>
+        <p class="post-item__summary">룸 단위 서비스업에서 매출 3천만 원이 넘으면 '성공한 사장님' 소리를 듣죠. 근데 저는 그 지점에서 6개월 만에 탈출했습니다. 다들 객단가 높으면 무조건 돈을 긁어모은다고 착각하는데, 사실 그게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-1th61nb.html">유흥 용어 정리에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">서울을 비롯한 여러 지역의 관련 정보를 접할 때 유흥 용어 정리를 찾아보는 이용자가 많습니다. 인터넷상에 떠도는 수많은 용어집은 초보자나 일반인에게 복잡한 은어를 쉽게 알려주는 유용한 지침서처럼 여</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-15evctp.html">권리금 2억 털고 나간 사장님의 유흥 용어 정리 노트</a>
+        <p class="post-item__summary">권리금 2억을 손에 쥐고 나간 그 사장님, 사실 그 돈이 마진에서 나온 게 아니라 감가상각을 억지로 때려 맞춘 '장부 마술'의 결과였다는 거 알고 계셨나요? 다들 가게 매출만 보고 달려드는데, 정작</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1p14gud.html">요즘 업계에서 &amp;#39;CPT 0412 찍힌다&amp;#39; 이거 어디서 나온 말이냐?</a>
+        <p class="post-item__summary">2013년 6월. 내가 그 USB를 처음 봤을 때, 7장은 그냥 지루한 시스템 아키텍처였어. 몆몇 블로거들은 &quot;1~5장이 전부다&quot;라고 했고, 나도 그렇게 믿었지.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-6e1vma.html">유흥 용어 정리 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">유흥 업계나 관련 커뮤니티에서 자주 언급되는 다양한 단어들은 처음 접하는 사람들에게 다소 생소하고 복잡하게 느껴질 수 있습니다. 서울 지역에서 유용한 정보를 탐색하는 이용자들이 상황별로 자주 궁금해</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
