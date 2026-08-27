@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <title>t2-press-pub-jongno-pro</title>
+  <rect width="64" height="64" rx="14" fill="hsl(228 72% 23%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(36 68% 60%)" opacity="0.16"/>
+  <g transform="rotate(0 32 32)"><path d="M44 20a17 17 0 1 0 6 14" fill="none" stroke="hsl(228 24% 96%)" stroke-width="7" stroke-linecap="round"/><circle cx="44" cy="20" r="5" fill="hsl(36 68% 60%)"/></g>
+</svg>
